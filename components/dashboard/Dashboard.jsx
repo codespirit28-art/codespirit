@@ -542,7 +542,7 @@ export default function Dashboard() {
 
                       </div>
 
-                      <button className="flex h-9 shrink-0 items-center justify-center gap-2 rounded-lg bg-[#8438ed] px-5 font-mono text-[11px] font-bold tracking-wide text-white transition hover:bg-[#954df5]">
+                      <a href="/choose-language"> <button className="flex h-9 shrink-0 items-center justify-center gap-2 rounded-lg bg-[#8438ed] px-5 font-mono text-[11px] font-bold tracking-wide text-white transition hover:bg-[#954df5]">
 
                         CONTINUE LEARNING
 
@@ -550,7 +550,7 @@ export default function Dashboard() {
                           size={15}
                         />
 
-                      </button>
+                      </button></a>
 
                     </div>
 
