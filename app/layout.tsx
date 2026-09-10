@@ -2,7 +2,7 @@ import "./globals.css";
 import type { ReactNode } from "react";
 
 export const metadata = {
-  title: "CodeQuest",
+  title: "CodeSpirit",
   description: "Learn coding, solve problems, earn rewards.",
 };
 
