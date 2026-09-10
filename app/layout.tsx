@@ -1,11 +1,12 @@
 import "./globals.css";
+import type { ReactNode } from "react";
 
 export const metadata = {
   title: "CodeQuest",
   description: "Learn coding, solve problems, earn rewards.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
