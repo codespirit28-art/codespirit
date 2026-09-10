@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 import { connectDB } from "@/lib/mongodb";
 import User from "@/models/User";
-import Topic from "@/models/Topic";
+import Topic from "@/models/topic";
 
 export async function POST(request) {
   try {
