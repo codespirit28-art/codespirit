@@ -414,7 +414,6 @@ return ( <main className="min-h-screen bg-[#020617] text-[#dae2fd] flex items-ce
   </div>
 
 </main>
-```
 
 );
 }
