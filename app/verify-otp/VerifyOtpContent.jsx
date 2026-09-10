@@ -26,7 +26,7 @@ inputRefs.current[0]?.focus();
 const handleChange = (e, index) => {
 const value = e.target.value;
 
-```
+
 // Only numbers
 if (!/^\d*$/.test(value)) return;
 
@@ -57,7 +57,7 @@ setOtp(newOtp);
 if (value && index < 5) {
   inputRefs.current[index + 1]?.focus();
 }
-```
+
 
 };
 
@@ -67,7 +67,7 @@ if (e.key === "Backspace" && !otp[index] && index > 0) {
 inputRefs.current[index - 1]?.focus();
 }
 
-```
+
 if (e.key === "ArrowLeft" && index > 0) {
   inputRefs.current[index - 1]?.focus();
 }
@@ -75,7 +75,7 @@ if (e.key === "ArrowLeft" && index > 0) {
 if (e.key === "ArrowRight" && index < 5) {
   inputRefs.current[index + 1]?.focus();
 }
-```
+
 
 };
 
@@ -83,7 +83,7 @@ if (e.key === "ArrowRight" && index < 5) {
 const handleSubmit = async (e) => {
 e.preventDefault();
 
-```
+
 setError("");
 setMessage("");
 
@@ -138,7 +138,7 @@ try {
 } finally {
   setLoading(false);
 }
-```
+
 
 };
 
@@ -146,7 +146,7 @@ try {
 const handleResend = async () => {
 if (!email || resending) return;
 
-```
+
 setError("");
 setMessage("");
 setResending(true);
@@ -181,7 +181,7 @@ try {
 } finally {
   setResending(false);
 }
-```
+
 
 };
 
