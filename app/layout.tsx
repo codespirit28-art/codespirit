@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { ReactNode } from "react";
-
+import SEOJsonLd from "@/components/SEOJsonLd";
 export const metadata = {
   metadataBase: new URL("https://codespirit-blue.vercel.app"),
 
