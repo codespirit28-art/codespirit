@@ -121,7 +121,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body>{children}</body>
+      <body>{children} <SEOJsonLd /> </body>
     </html>
   );
 }
