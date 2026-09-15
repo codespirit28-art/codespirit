@@ -1,22 +1,20 @@
-export default function robots() {
-  const baseUrl = "https://codespirit-blue.vercel.app";
+import type { MetadataRoute } from "next";
 
+export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: [
-          "/api/",
-          "/dashboard/",
-          "/admin/",
-          "/login/",
-          "/register/",
-          "/verify-otp/",
-        ],
-      },
-    ],
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: [
+        "/api/",
+        "/admin/",
+        "/dashboard/",
+        "/login/",
+        "/register/",
+        "/verify-otp/",
+      ],
+    },
 
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: "https://codespirit-blue.vercel.app/sitemap.xml",
   };
 }
