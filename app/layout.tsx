@@ -99,6 +99,12 @@ export default function RootLayout({
           content="ca-pub-3046355403693736"
         />
 
+        {/* Google Search Console Verification */}
+<meta
+  name="google-site-verification"
+  content="l7MSqLYNqwCMPMcrY6SkxG8jhor0eG73jqAsafxl5gU"
+/>
+
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 
