@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { ReactNode } from "react";
-import Script from "next/script";
 
 export const metadata = {
   title: "CodeSpirit",
@@ -15,6 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
+        {/* Google AdSense */}
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-3046355403693736"
+        />
+
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -37,16 +42,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body>
-        {children}
-
-        {/* Google AdSense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3046355403693736"
-          crossOrigin="anonymous"
-        />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
