@@ -7,18 +7,30 @@ export const metadata = {
   description: "Learn coding, solve problems, earn rewards.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
+        {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+
+        {/* Material Symbols */}
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
 
+        {/* Inter + JetBrains Mono */}
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;450;600&display=swap"
           rel="stylesheet"
@@ -28,6 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         {children}
 
+        {/* Google AdSense */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3046355403693736"
