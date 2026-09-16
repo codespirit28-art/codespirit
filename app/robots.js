@@ -1,6 +1,4 @@
-import type { MetadataRoute } from "next";
-
-export default function robots(): MetadataRoute.Robots {
+export default function robots() {
   return {
     rules: {
       userAgent: "*",
@@ -14,7 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         "/verify-otp/",
       ],
     },
-
     sitemap: "https://codespirit-blue.vercel.app/sitemap.xml",
   };
 }
